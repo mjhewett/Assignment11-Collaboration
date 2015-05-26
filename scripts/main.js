@@ -27,15 +27,12 @@ forEach(people, function(person){
 // 2. Write your own map, reduce, and filter functions that use your custom forEach to do their work.
 
 
-function map(person, age){
-	var arr2 = []
-people.forEach 
-	arr2.push(person.age)
-};
-}
+
+people.map(callback, [thisArg] )
+
 
 function filter(person, country){
-	
+
 }
 
 //////////////////////////////////////////////////
