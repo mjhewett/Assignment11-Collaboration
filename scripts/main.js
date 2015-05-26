@@ -11,6 +11,7 @@ var people = [
 {name: 'Keeeesh', city: 'Atlanta', country: 'United States of America', zipcode: '30035', age: 28}
 ];
 
+
 	function forEach(list, callback){
 	for(var i = 0; i < list.length; i++){
 		callback(list[i]); 
@@ -28,12 +29,36 @@ forEach(people, function(person){
 
 
 
-people.map(callback, [thisArg] )
+    function forEach(list, callback){
+    for(var i = 0; i < list.length; i++){
+        callback(list[i]);
+    }
+};
+
+forEach(people, function(person){
+    console.log("Yo dog, my name is " + person.name + " and I iz frum " + person.city);
+});
+
+// 2. Write your own map, reduce, and filter functions that use your custom forEach to do their work.
 
 
-function filter(person, country){
+var newArray = [];
+// var newVar = ();
 
-}
+function map() {
+  people.forEach ( function (age){
+    for(var i = 0; i < list.length; i++){
+        callback(list[i]);
+    }
+    newArray.push(newArray.age)
+  });
+};
+
+
+
+
+
+
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -54,6 +79,7 @@ pluck(stooges, 'name');
 
 // 4. Write a function called find that looks through each value in the list, returning the first one that passes a truth test (predicate), or undefined if no value passes the test. The function returns as soon as it finds an acceptable element, and doesn't traverse the entire list.
 
+<<<<<<< HEAD
 function find(list, predicate) { //* Do stuff */ }
 
 var even = find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
@@ -64,3 +90,9 @@ var even = find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
 
 
 
+=======
+function find(list, predicate) { /* Do stuff */ }
+
+var even = find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+//=> 2
+>>>>>>> a040ae2c31519a9269afad5df83203b6ab54efff
